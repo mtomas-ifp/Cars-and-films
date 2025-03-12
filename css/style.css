@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     align-items: center;
+    background-position: center;
 }
 
 h1 {

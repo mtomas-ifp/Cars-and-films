@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-image: url("../img/fons.jpg"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative; 
+}
+
+.cap {
+    height: 589px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    z-index: 1; 
+    animation: cambi 12s infinite;
+    background-repeat: no-repeat;
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 0 400px 0;
+    text-align: center;
+    top: 20px;
+}
+
+.cos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative; 
+    z-index: 1; 
+}
+
+.bloc {
+    float: left;
+    margin: 10px;
+}
+
+.img1 {
+    height: 200px;
+}
+
+.titol {
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    background: white;
+    margin: 0;
+}
+
+.bloc:hover {
+    animation: girar 0.3s ;
+    filter: hue-rotate(90deg);
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.peu {
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid pink;
+    border-bottom: 749px solid transparent;
+    z-index: 0; 
+}
+
+@keyframes cambi {
+    0% {
+        background-image: url('../img/ani/back.png'); /* Imagen inicial */
+    }
+    10% {
+        background-image: url('../img/ani/bean.png'); /* Segunda imagen */
+    }
+    20% {
+        background-image: url('../img/ani/bond.png'); /* Tercera imagen */
+    }
+    30% {
+        background-image: url('../img/ani/break.png'); /* Cuarta imagen */
+    }
+    40% {
+        background-image: url('../img/ani/ghost.png'); /* Vuelve a la imagen inicial */
+    }
+    50% {
+        background-image: url('../img/ani/pulp.png'); /* Imagen inicial */
+    }
+    60% {
+        background-image: url('../img/ani/rider.png'); /* Segunda imagen */
+    }
+    70% {
+        background-image: url('../img/ani/taxi.png'); /* Tercera imagen */
+    }
+    100% {
+        background-image: url('../img/ani/team.png'); /* Cuarta imagen */
+    }
+}
